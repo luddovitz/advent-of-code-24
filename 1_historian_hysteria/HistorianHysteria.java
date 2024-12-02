@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Main {
+public class HistorianHysteria {
 
     public static List<Integer> list = new ArrayList<>();
     public static List<Integer> list2 = new ArrayList<>();
@@ -38,7 +38,7 @@ public class Main {
     }
 
     private static void readFileAndPopulateLists() throws FileNotFoundException {
-        URL getPath = Main.class.getResource("list.txt");
+        URL getPath = HistorianHysteria.class.getResource("list.txt");
         assert getPath != null;
         File listTxt = new File(getPath.getPath());
         Scanner scanner = new Scanner(listTxt);
